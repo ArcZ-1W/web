@@ -533,6 +533,16 @@ function handleApi(req, res, pathname, query) {
     return sendJson(res, 200, { ok: true, status: 'online' });
   }
 
+  // POST /api/admin/shutdown-all -> matikan seluruh server dan proses terkait
+  if (req.method === 'POST' && pathname === '/api/admin/shutdown-all') {
+    sendJson(res, 200, { ok: true, message: 'Server shutdown initiated.' });
+    console.log('[SHUTDOWN ALL] Perintah shutdown all diterima. Mematikan server...');
+    setTimeout(() => {
+      process.exit(0);
+    }, 500);
+    return;
+  }
+
   // GET /api/wallpaper -> get current system wallpaper
   if (req.method === 'GET' && pathname === '/api/wallpaper') {
     const wallFile = path.join(DATA_DIR, 'wallpaper.json');

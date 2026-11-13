@@ -1,4 +1,28 @@
+# Dependencies
 node_modules/
+package-lock.json
+
+# Environment & Logs
 server_watchdog.log
+*.log
 .DS_Store
 Thumbs.db
+
+# Archives & Bloat
+*.zip
+*.apk
+*.tar*
+*.rar
+*.7z
+
+# Internal Tools & Duplicate Subfolders
+!my pnk/
+Anya-Extracted/
+graphify-out/
+anti-slop/
+session/
+.agents/
+
+# Stored upload files (keep data JSONs, ignore raw uploaded files)
+data/files/
+files/
