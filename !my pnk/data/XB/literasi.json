@@ -1,0 +1,39 @@
+{
+  "presenters": [
+    {
+      "absen": 8,
+      "name": "Hosea Dandi Wibowo"
+    },
+    {
+      "absen": 10,
+      "name": "Jocelyn Dhamelinnka Uneputty"
+    },
+    {
+      "absen": 1,
+      "name": "Arnold Winson Santoso"
+    },
+    {
+      "absen": 7,
+      "name": "Gyselle Assa Calysta"
+    },
+    {
+      "absen": 4,
+      "name": "Elliana Avril Sugiri"
+    },
+    {
+      "absen": 11,
+      "name": "Kefas Victoriano Fritzietama"
+    },
+    {
+      "absen": 12,
+      "name": "Kenzo Natha Tadani"
+    },
+    {
+      "absen": 3,
+      "name": "Elia Gustaaf Seisjunio Sanger"
+    }
+  ],
+  "date": "2026-11-12T12:52:42.373Z",
+  "updatedAt": "2026-11-12T12:52:42.395Z",
+  "count": 8
+}

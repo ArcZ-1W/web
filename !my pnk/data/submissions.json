@@ -1,0 +1,83 @@
+[
+  {
+    "id": "sub_1794211833759",
+    "assignmentId": "task_1794211606653",
+    "studentName": "Stevan Christian",
+    "studentAbsen": 17,
+    "submittedAt": "2026-11-09T08:10:33.809Z",
+    "isLate": false,
+    "isEdited": false,
+    "editHistory": [],
+    "notes": "",
+    "fileName": "17942118096745585704041589924764.jpg",
+    "fileSize": 2338825,
+    "fileType": "image/jpeg",
+    "storedFile": "1794211833759_0_17942118096745585704041589924764.jpg",
+    "downloadUrl": "/api/download?file=1794211833759_0_17942118096745585704041589924764.jpg",
+    "files": [
+      {
+        "fileName": "17942118096745585704041589924764.jpg",
+        "fileSize": 2338825,
+        "fileType": "image/jpeg",
+        "storedFile": "1794211833759_0_17942118096745585704041589924764.jpg",
+        "downloadUrl": "/api/download?file=1794211833759_0_17942118096745585704041589924764.jpg"
+      }
+    ],
+    "grade": 100,
+    "gradedAt": "2026-11-09T08:10:43.708Z"
+  },
+  {
+    "id": "sub_1794288869875",
+    "assignmentId": "task_1794288842789",
+    "studentName": "Stevan Christian",
+    "studentAbsen": 17,
+    "submittedAt": "2026-11-10T05:34:29.878Z",
+    "isLate": false,
+    "isEdited": false,
+    "editHistory": [],
+    "notes": "",
+    "fileName": "WIN_20261103_12_33_10_Pro.jpg",
+    "fileSize": 131040,
+    "fileType": "image/jpeg",
+    "storedFile": "1794288869875_0_WIN_20261103_12_33_10_Pro.jpg",
+    "downloadUrl": "/api/download?file=1794288869875_0_WIN_20261103_12_33_10_Pro.jpg",
+    "files": [
+      {
+        "fileName": "WIN_20261103_12_33_10_Pro.jpg",
+        "fileSize": 131040,
+        "fileType": "image/jpeg",
+        "storedFile": "1794288869875_0_WIN_20261103_12_33_10_Pro.jpg",
+        "downloadUrl": "/api/download?file=1794288869875_0_WIN_20261103_12_33_10_Pro.jpg"
+      }
+    ],
+    "grade": 100,
+    "gradedAt": "2026-11-10T05:34:51.529Z"
+  },
+  {
+    "id": "sub_1794288975982",
+    "assignmentId": "task_1794288842789",
+    "studentName": "Arnold Winson Santoso",
+    "studentAbsen": 1,
+    "submittedAt": "2026-11-10T05:36:15.984Z",
+    "isLate": false,
+    "isEdited": false,
+    "editHistory": [],
+    "notes": "",
+    "fileName": "WIN_20261103_15_57_04_Pro.jpg",
+    "fileSize": 124545,
+    "fileType": "image/jpeg",
+    "storedFile": "1794288975982_0_WIN_20261103_15_57_04_Pro.jpg",
+    "downloadUrl": "/api/download?file=1794288975982_0_WIN_20261103_15_57_04_Pro.jpg",
+    "files": [
+      {
+        "fileName": "WIN_20261103_15_57_04_Pro.jpg",
+        "fileSize": 124545,
+        "fileType": "image/jpeg",
+        "storedFile": "1794288975982_0_WIN_20261103_15_57_04_Pro.jpg",
+        "downloadUrl": "/api/download?file=1794288975982_0_WIN_20261103_15_57_04_Pro.jpg"
+      }
+    ],
+    "grade": 77,
+    "gradedAt": "2026-11-10T05:36:29.473Z"
+  }
+]

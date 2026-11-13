@@ -1,0 +1,152 @@
+[
+  {
+    "id": "devo_20261102",
+    "date": "2026-11-02",
+    "day": "Senin",
+    "studentAbsen": 0,
+    "studentName": "Ms. Thessa",
+    "topic": "Devotion in English - Luke 9:49-50",
+    "scripture": "Luke 9:49-50",
+    "status": "completed"
+  },
+  {
+    "id": "devo_20261103",
+    "date": "2026-11-03",
+    "day": "Selasa",
+    "studentAbsen": 5,
+    "studentName": "Fabianus Evanjanu Arkananta (Evan)",
+    "topic": "Devotion in English - Luke 9:51-56",
+    "scripture": "Luke 9:51-56",
+    "status": "completed"
+  },
+  {
+    "id": "devo_20261104",
+    "date": "2026-11-04",
+    "day": "Rabu",
+    "studentAbsen": 4,
+    "studentName": "Elliana Avril Sugiri",
+    "topic": "Intercessory Prayer (Doa Syafaat) - Luke 9:57-62",
+    "scripture": "Luke 9:57-62",
+    "status": "completed"
+  },
+  {
+    "id": "devo_20261105",
+    "date": "2026-11-05",
+    "day": "Kamis",
+    "studentAbsen": 8,
+    "studentName": "Hosea Dandi Wibowo",
+    "topic": "Devotion in English - Luke 10:1-24",
+    "scripture": "Luke 10:1-24",
+    "status": "completed"
+  },
+  {
+    "id": "devo_20261106",
+    "date": "2026-11-06",
+    "day": "Jumat",
+    "studentAbsen": 0,
+    "studentName": "Chapel (GKA)",
+    "topic": "Ibadah Bersama Seluruh Siswa & Guru di GKA",
+    "scripture": "Sesuai Tema Ibadah Chapel",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261109",
+    "date": "2026-11-09",
+    "day": "Senin",
+    "studentAbsen": 0,
+    "studentName": "Morning Worship",
+    "topic": "Morning Worship Bersama di Hall",
+    "scripture": "Pujian & Renungan Bersama",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261110",
+    "date": "2026-11-10",
+    "day": "Selasa",
+    "studentAbsen": 9,
+    "studentName": "Jericho Ezra Shallom (Jeric)",
+    "topic": "Devotion in English - Luke 10:25-37",
+    "scripture": "Luke 10:25-37",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261111",
+    "date": "2026-11-11",
+    "day": "Rabu",
+    "studentAbsen": 7,
+    "studentName": "Gyselle Assa Calysta",
+    "topic": "Intercessory Prayer (Doa Syafaat) - Luke 10:38-42",
+    "scripture": "Luke 10:38-42",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261112",
+    "date": "2026-11-12",
+    "day": "Kamis",
+    "studentAbsen": 14,
+    "studentName": "Michael Wibowo",
+    "topic": "Devotion in English - Luke 11:1-13",
+    "scripture": "Luke 11:1-13",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261113",
+    "date": "2026-11-13",
+    "day": "Jumat",
+    "studentAbsen": 0,
+    "studentName": "Chapel",
+    "topic": "Ibadah Bersama di Chapel",
+    "scripture": "Sesuai Jadwal Chapel",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261116",
+    "date": "2026-11-16",
+    "day": "Senin",
+    "studentAbsen": 11,
+    "studentName": "Kefas Victoriano Fritzietama",
+    "topic": "Devotion in English - Luke 11:14-23",
+    "scripture": "Luke 11:14-23",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261117",
+    "date": "2026-11-17",
+    "day": "Selasa",
+    "studentAbsen": 0,
+    "studentName": "Morning Worship",
+    "topic": "Morning Worship Bersama di Hall",
+    "scripture": "Pujian & Renungan Bersama",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261118",
+    "date": "2026-11-18",
+    "day": "Rabu",
+    "studentAbsen": 12,
+    "studentName": "Kenzo Natha Tadani",
+    "topic": "Intercessory Prayer (Doa Syafaat) - Luke 11:24-28",
+    "scripture": "Luke 11:24-28",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261119",
+    "date": "2026-11-19",
+    "day": "Kamis",
+    "studentAbsen": 3,
+    "studentName": "Elia Gustaaf Seisjunio Sanger",
+    "topic": "Devotion in English - Luke 11:29-32",
+    "scripture": "Luke 11:29-32",
+    "status": "upcoming"
+  },
+  {
+    "id": "devo_20261120",
+    "date": "2026-11-20",
+    "day": "Jumat",
+    "studentAbsen": 0,
+    "studentName": "Chapel",
+    "topic": "Ibadah Bersama di Chapel",
+    "scripture": "Sesuai Jadwal Chapel",
+    "status": "upcoming"
+  }
+]

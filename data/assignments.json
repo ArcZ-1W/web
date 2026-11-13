@@ -1,0 +1,66 @@
+[
+  {
+    "id": "task_kelompok_xb_01",
+    "title": "Proyek Kelompok: Analisis Desain Cloud Storage",
+    "subject": "IT",
+    "type": "group",
+    "isGroup": true,
+    "deadline": "2026-11-25T23:59:00.000Z",
+    "latePolicy": "allow",
+    "description": "Kerjakan proyek analisis desain sistem cloud storage secara berkelompok. Cukup satu perwakilan kelompok yang mengunggah berkas laporan/proyek (PDF/ZIP). Status pengumpulan dan nilai akan otomatis tersinkronisasi ke seluruh anggota kelompok.",
+    "groups": [
+      {
+        "id": "kel-1",
+        "name": "Kelompok 1 (Alpha)",
+        "members": [
+          "01. Arnold Winson Santoso",
+          "02. Dave Samuel Prawira Sutomo",
+          "03. Elia Gustaaf Seisjunio Sanger",
+          "04. Elliana Avril Sugiri"
+        ]
+      },
+      {
+        "id": "kel-2",
+        "name": "Kelompok 2 (Beta)",
+        "members": [
+          "05. Fabianus Evanjanu Arkananta",
+          "06. Firent Brigeyza",
+          "07. Gyselle Assa Calysta",
+          "08. Hosea Dandi Wibowo"
+        ]
+      },
+      {
+        "id": "kel-3",
+        "name": "Kelompok 3 (Gamma)",
+        "members": [
+          "09. Jericho Ezra Shallom, Fautngiljanan",
+          "10. Jocelyn Dhamelinnka Uneputty",
+          "11. Kefas Victoriano Fritzietama",
+          "12. Kenzo Natha Tadani"
+        ]
+      },
+      {
+        "id": "kel-4",
+        "name": "Kelompok 4 (Delta)",
+        "members": [
+          "13. Maelynn Nielsie",
+          "14. Michael Wibowo",
+          "15. Muhamad Alif Januar Putra Pradana",
+          "17. Stevan Christian"
+        ]
+      }
+    ],
+    "createdBy": "Guru IT",
+    "createdAt": "2026-11-12T10:00:00.000Z"
+  },
+  {
+    "id": "task_1794288842789",
+    "title": "Tugas Python",
+    "subject": "IT",
+    "description": "Kumpulkan link google colab kalian",
+    "deadline": "2026-11-11T16:59:00.000Z",
+    "latePolicy": "close",
+    "createdBy": "Admin",
+    "createdAt": "2026-11-10T05:34:02.793Z"
+  }
+]

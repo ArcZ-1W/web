@@ -1,0 +1,15 @@
+{
+  "0": "Frontend UI State & DOM Controls",
+  "1": "Backend HTTP Server & Local API",
+  "2": "Assignment Storage, Submissions & History",
+  "4": "NPM Package Dependencies",
+  "5": "Spin Wheel, Randomizer & Literasi",
+  "6": "Quiz Maker & Import Pipeline",
+  "8": "Quiz Runner & Anti-Cheat Guards",
+  "9": "Sidebar Navigation & Class Selector",
+  "10": "Auth Gateway & 3-Step Login Wizard",
+  "12": "App Initialization & IndexedDB Boot",
+  "13": "Live Quiz Session Monitor",
+  "14": "Student Avatar Cropper",
+  "15": "Remedial Quiz Publishing"
+}

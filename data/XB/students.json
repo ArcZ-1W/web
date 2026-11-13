@@ -1,0 +1,86 @@
+[
+  {
+    "absen": 1,
+    "name": "Arnold Winson Santoso",
+    "code": "123",
+    "salt": "5a93feb3d99b124d",
+    "hash": "270b8153c1bf4c1e521e5f602f096aa3a51f5aa4da6f30e02fde9b80beab5c6b"
+  },
+  {
+    "absen": 2,
+    "name": "Dave Samuel Prawira Sutomo",
+    "code": "2pnk"
+  },
+  {
+    "absen": 3,
+    "name": "Elia Gustaaf Seisjunio Sanger",
+    "code": "3pnk"
+  },
+  {
+    "absen": 4,
+    "name": "Elliana Avril Sugiri",
+    "code": "4pnk"
+  },
+  {
+    "absen": 5,
+    "name": "Fabianus Evanjanu Arkananta",
+    "code": "5pnk"
+  },
+  {
+    "absen": 6,
+    "name": "Firent Brigeyza",
+    "code": "6pnk"
+  },
+  {
+    "absen": 7,
+    "name": "Gyselle Assa Calysta",
+    "code": "7pnk"
+  },
+  {
+    "absen": 8,
+    "name": "Hosea Dandi Wibowo",
+    "code": "8pnk"
+  },
+  {
+    "absen": 9,
+    "name": "Jericho Ezra Shallom, Fautngiljanan",
+    "code": "9pnk"
+  },
+  {
+    "absen": 10,
+    "name": "Jocelyn Dhamelinnka Uneputty",
+    "code": "10pnk"
+  },
+  {
+    "absen": 11,
+    "name": "Kefas Victoriano Fritzietama",
+    "code": "11pnk"
+  },
+  {
+    "absen": 12,
+    "name": "Kenzo Natha Tadani",
+    "code": "12pnk"
+  },
+  {
+    "absen": 13,
+    "name": "Maelynn Nielsie",
+    "code": "13pnk"
+  },
+  {
+    "absen": 14,
+    "name": "Michael Wibowo",
+    "code": "14pnk"
+  },
+  {
+    "absen": 15,
+    "name": "Muhamad Alif Januar Putra Pradana",
+    "code": "15pnk"
+  },
+  {
+    "absen": 17,
+    "name": "Stevan Christian",
+    "code": "123",
+    "salt": "f486f2750928e9bf",
+    "hash": "06226cef96bbcc92608f78c376335687f4a26ca337cf8276c24cb68907d49b83"
+  }
+]

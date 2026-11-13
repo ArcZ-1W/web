@@ -1,0 +1,97 @@
+[
+  {
+    "id": "sess_1794211702835_h2ju",
+    "quizId": "quiz_1794211659410_8zu7",
+    "quizTitle": "dwwdasd",
+    "studentAbsen": 17,
+    "studentName": "Stevan Christian",
+    "status": "completed",
+    "startedAt": "2026-11-09T08:08:22.835Z",
+    "submittedAt": "2026-11-09T08:09:54.991Z",
+    "lastHeartbeat": "2026-11-09T08:09:54.128Z",
+    "isFullscreen": true,
+    "violationsCount": 0,
+    "violationsLog": [],
+    "isRedAlert": false,
+    "answers": {
+      "q_1794211640469_nz5ka": "Opsi 1",
+      "q_1794211651134_6dcvl": "Opsi 1"
+    },
+    "score": 20,
+    "maxScore": 20,
+    "percentage": 100,
+    "answeredCount": 2,
+    "totalCount": 2,
+    "progressPercent": 100,
+    "lastViolationType": null,
+    "lastViolationReason": null,
+    "lastViolationTime": null,
+    "tabViolationsCount": 0,
+    "isLocked": false,
+    "lockedReason": null,
+    "fullscreenViolationsCount": 0,
+    "adminUnlocked": true,
+    "rawScore": 20,
+    "rawPercentage": 100,
+    "isRemedial": false,
+    "remedialForQuizId": null
+  },
+  {
+    "id": "sess_1794289017037_osmo",
+    "quizId": "quiz_1794211659410_8zu7",
+    "quizTitle": "dwwdasd",
+    "studentAbsen": 1,
+    "studentName": "Arnold Winson Santoso",
+    "status": "completed",
+    "startedAt": "2026-11-10T05:36:57.039Z",
+    "submittedAt": "2026-11-10T05:38:17.654Z",
+    "lastHeartbeat": "2026-11-10T05:38:17.522Z",
+    "isFullscreen": true,
+    "violationsCount": 3,
+    "violationsLog": [
+      {
+        "type": "fullscreen_exit",
+        "note": "Keluar dari mode layar penuh (Exit Fullscreen)",
+        "time": "2026-11-10T05:37:29.572Z"
+      },
+      {
+        "type": "fullscreen_exit",
+        "note": "Keluar dari mode layar penuh (Exit Fullscreen)",
+        "time": "2026-11-10T05:37:33.556Z"
+      },
+      {
+        "type": "tab_exit",
+        "note": "Kehilangan fokus layar browser (Window Blur / Pindah Aplikasi)",
+        "time": "2026-11-10T05:37:35.065Z"
+      },
+      {
+        "type": "admin_unlocked",
+        "note": "Akses kuis dibuka kembali dengan izin oleh Guru / Admin",
+        "time": "2026-11-10T05:38:09.974Z"
+      }
+    ],
+    "isRedAlert": false,
+    "answers": {
+      "q_1794211640469_nz5ka": "Opsi 1",
+      "q_1794211651134_6dcvl": "Opsi 1"
+    },
+    "score": 20,
+    "maxScore": 20,
+    "percentage": 100,
+    "answeredCount": 2,
+    "totalCount": 2,
+    "progressPercent": 100,
+    "lastViolationType": "tab_exit",
+    "lastViolationReason": "Kehilangan fokus layar browser (Window Blur / Pindah Aplikasi)",
+    "lastViolationTime": "12.37.35",
+    "fullscreenViolationsCount": 2,
+    "tabViolationsCount": 1,
+    "isLocked": false,
+    "lockedReason": null,
+    "adminUnlocked": true,
+    "rawScore": 20,
+    "rawPercentage": 100,
+    "isRemedial": false,
+    "remedialForQuizId": null
+  }
+]

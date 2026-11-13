@@ -1,0 +1,55 @@
+========================================================================
+                  MYPNK CLOUD - PANDUAN PENGGUNAAN
+           Sekolah Kristen Pelita Nusantara Kasih Surakarta
+========================================================================
+
+Aplikasi ini adalah sistem cloud lokal & alat kelas digital mandiri.
+Semua data (tugas, siswa, pengumpulan, jadwal, literasi) tersimpan aman di folder data/.
+
+------------------------------------------------------------------------
+1. CARA MENJALANKAN DI KOMPUTER / LAPTOP (WINDOWS)
+------------------------------------------------------------------------
+- Cukup klik 2x berkas: "MyPnk.exe"
+- Aplikasi akan otomatis menjalankan server lokal dan membuka browser ke http://localhost:3000
+- Anda juga dapat menggunakan pintasan keyboard di jendela launcher:
+    [O] : Buka / refresh tampilan web di browser default
+    [R] : Restart server Node.js
+    [C] : Buka berkas pengaturan config.json
+    [Q] : Keluar dan matikan server secara bersih
+
+------------------------------------------------------------------------
+2. PENGATURAN KONFIGURASI (config.json)
+------------------------------------------------------------------------
+Anda dapat mengubah nomor port, auto-open browser, atau nama aplikasi pada:
+    config.json
+
+Contoh:
+{
+  "appName": "MyPNK Cloud",
+  "port": 3000,
+  "host": "0.0.0.0",
+  "autoOpenBrowser": true,
+  "notifications": {
+    "enabled": true,
+    "vibrate": true
+  }
+}
+
+------------------------------------------------------------------------
+3. PENGGUNAAN DI HP / MOBILE (ANDROID & iOS) DENGAN NOTIFIKASI
+------------------------------------------------------------------------
+- Pastikan HP dan Komputer terhubung ke jaringan Wi-Fi yang sama.
+- Buka browser Chrome / Safari di HP, lalu ketik alamat IP komputer Anda:
+    http://<IP-KOMPUTER>:3000  (Contoh: http://192.168.1.10:3000)
+- Untuk memasang sebagai Aplikasi HP (PWA/APK):
+    * Di Chrome Android: Tekan tombol titik tiga (menu) -> pilih "Pasang Aplikasi" / "Tambahkan ke Layar Utama".
+    * Di Safari iPhone: Tekan tombol Bagikan (Share) -> pilih "Tambah ke Layar Utama".
+- Izinkan Notifikasi saat muncul permintaan izin (popup browser):
+    Aplikasi akan bergetar dan mengirimkan notifikasi langsung ke bilah status HP saat ada tugas baru atau pengumpulan siswa!
+
+------------------------------------------------------------------------
+4. PEMULIHAN & CADANGAN (BACKUP)
+------------------------------------------------------------------------
+Semua database JSON berada di dalam folder "data/".
+Untuk mencadangkan seluruh data kelas, cukup simpan salinan folder "data/" ke flashdisk atau Google Drive.
+========================================================================
