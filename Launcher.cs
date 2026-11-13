@@ -3,27 +3,41 @@ using System.IO;
 using System.Diagnostics;
 using System.Threading;
 using System.Text;
+using System.Reflection;
+using System.Runtime.InteropServices;
+
+[assembly: AssemblyTitle("MyPNK Cloud Server")]
+[assembly: AssemblyDescription("Sistem Cloud & Alat Kelas Mandiri - Pelita Nusantara Kasih")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Sekolah Kristen Pelita Nusantara Kasih Surakarta")]
+[assembly: AssemblyProduct("MyPNK Cloud")]
+[assembly: AssemblyCopyright("Copyright (C) 2026")]
+[assembly: AssemblyTrademark("Pelita Nusantara Kasih")]
+[assembly: AssemblyCulture("")]
+[assembly: ComVisible(false)]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
 
 namespace MyPnkLauncher
 {
     class Program
     {
         private static Process serverProcess = null;
-        private static bool isRunning = true;
+        private static volatile bool isRunning = true;
         private static int serverPort = 3000;
         private static bool autoOpenBrowser = true;
-        private static string appDir = AppDomain.CurrentDomain.BaseDirectory;
+        private static readonly string appDir = AppDomain.CurrentDomain.BaseDirectory;
 
         static void Main(string[] args)
         {
             Console.Title = "MyPNK Cloud Server - Launcher";
             Console.OutputEncoding = Encoding.UTF8;
 
-            AppDomain.CurrentDomain.ProcessExit += (s, e) => KillServerProcess();
+            AppDomain.CurrentDomain.ProcessExit += (s, e) => CleanExitServer();
             Console.CancelKeyPress += (s, e) => {
                 e.Cancel = true;
                 isRunning = false;
-                KillServerProcess();
+                CleanExitServer();
                 Environment.Exit(0);
             };
 
@@ -34,16 +48,16 @@ namespace MyPnkLauncher
             if (string.IsNullOrEmpty(nodePath))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(" [!] Error: Node.js (node.exe) tidak ditemukan di sistem.");
+                Console.WriteLine(" [!] Node.js (node.exe) tidak ditemukan.");
                 Console.ResetColor();
-                Console.WriteLine("     Silakan unduh dan pasang Node.js dari https://nodejs.org/");
+                Console.WriteLine("     Silakan pasang Node.js dari https://nodejs.org/");
                 Console.WriteLine("\n Tekan sembarang tombol untuk keluar...");
                 Console.ReadKey();
                 return;
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(" [*] Node.js ditemukan: " + nodePath);
+            Console.WriteLine(" [*] Node.js terdeteksi: " + nodePath);
             Console.ResetColor();
 
             StartServer(nodePath);
@@ -54,9 +68,9 @@ namespace MyPnkLauncher
                 OpenBrowser();
             }
 
-            Console.WriteLine("\n Kontrol Pintasan:");
+            Console.WriteLine("\n Menu Kontrol:");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("   [O] Buka Web di Browser  |  [R] Restart Server  |  [C] Buka Config  |  [Q] Keluar");
+            Console.WriteLine("   [O] Buka di Browser  |  [R] Restart Server  |  [C] Buka Config  |  [Q] Keluar");
             Console.ResetColor();
             Console.WriteLine(new string('-', 62));
 
@@ -74,7 +88,7 @@ namespace MyPnkLauncher
                         Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.WriteLine("\n [*] Merestart server...");
                         Console.ResetColor();
-                        KillServerProcess();
+                        CleanExitServer();
                         Thread.Sleep(1000);
                         StartServer(nodePath);
                     }
@@ -94,7 +108,7 @@ namespace MyPnkLauncher
                 Thread.Sleep(100);
             }
 
-            KillServerProcess();
+            CleanExitServer();
         }
 
         static void DrawBanner()
@@ -105,9 +119,9 @@ namespace MyPnkLauncher
             Console.WriteLine("           Sekolah Kristen Pelita Nusantara Kasih            ");
             Console.WriteLine("==============================================================");
             Console.ResetColor();
-            Console.WriteLine(" Direktori Kerja : " + appDir);
-            Console.WriteLine(" Port Server     : " + serverPort);
-            Console.WriteLine(" Status          : Menjalankan layanan...");
+            Console.WriteLine(" Lokasi Server : " + appDir);
+            Console.WriteLine(" Port Layanan  : " + serverPort);
+            Console.WriteLine(" Status        : Siap digunakan");
             Console.WriteLine(new string('-', 62));
         }
 
@@ -119,7 +133,6 @@ namespace MyPnkLauncher
                 if (File.Exists(configPath))
                 {
                     string text = File.ReadAllText(configPath);
-                    // Simple parse port and autoOpenBrowser
                     int pIdx = text.IndexOf("\"port\":");
                     if (pIdx >= 0)
                     {
@@ -145,7 +158,6 @@ namespace MyPnkLauncher
                 }
                 else
                 {
-                    // Create default config.json
                     string defaultJson = "{\n  \"appName\": \"MyPNK Cloud\",\n  \"port\": 3000,\n  \"autoOpenBrowser\": true,\n  \"notifications\": {\n    \"enabled\": true,\n    \"vibrate\": true\n  }\n}";
                     File.WriteAllText(configPath, defaultJson, Encoding.UTF8);
                 }
@@ -171,7 +183,6 @@ namespace MyPnkLauncher
                 if (File.Exists(p)) return p;
             }
 
-            // Check system PATH
             string pathEnv = Environment.GetEnvironmentVariable("PATH") ?? "";
             string[] dirs = pathEnv.Split(Path.PathSeparator);
             foreach (string d in dirs)
@@ -194,14 +205,13 @@ namespace MyPnkLauncher
                 string serverScript = Path.Combine(appDir, "server.js");
                 if (!File.Exists(serverScript))
                 {
-                    // Check parent dir
                     serverScript = Path.Combine(Directory.GetParent(appDir).FullName, "server.js");
                 }
 
                 if (!File.Exists(serverScript))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(" [!] Error: server.js tidak ditemukan di direktori " + appDir);
+                    Console.WriteLine(" [!] Error: server.js tidak ditemukan.");
                     Console.ResetColor();
                     return;
                 }
@@ -259,13 +269,13 @@ namespace MyPnkLauncher
             {
                 string url = "http://localhost:" + serverPort;
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine(" [*] Membuka browser default ke: " + url);
+                Console.WriteLine(" [*] Membuka browser: " + url);
                 Console.ResetColor();
                 Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
             }
             catch (Exception ex)
             {
-                Console.WriteLine(" [!] Tidak dapat membuka browser otomatis: " + ex.Message);
+                Console.WriteLine(" [!] Tidak dapat membuka browser: " + ex.Message);
             }
         }
 
@@ -282,23 +292,14 @@ namespace MyPnkLauncher
             catch { }
         }
 
-        static void KillServerProcess()
+        static void CleanExitServer()
         {
             try
             {
                 if (serverProcess != null && !serverProcess.HasExited)
                 {
-                    // Kill process tree
-                    ProcessStartInfo taskkill = new ProcessStartInfo("taskkill", "/PID " + serverProcess.Id + " /T /F");
-                    taskkill.CreateNoWindow = true;
-                    taskkill.UseShellExecute = false;
-                    Process pk = Process.Start(taskkill);
-                    if (pk != null) pk.WaitForExit(1500);
-
-                    if (!serverProcess.HasExited)
-                    {
-                        serverProcess.Kill();
-                    }
+                    serverProcess.Kill();
+                    serverProcess.WaitForExit(1000);
                     serverProcess = null;
                 }
             }
